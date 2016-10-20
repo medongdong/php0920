@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改管理员数据</title>
+</head>
+<body>
+<form action="index.php?p=Admin&c=Admin&a=edit" method="post">
+    <input type="hidden" name="id" value="<?php echo $id;?>"/>
+    用户名：<input type="text" name="username" value="<?php echo $username;?>"/><br/>
+    email：<input type="text" name="email" value="<?php echo $email;?>"/><br/>
+    旧密码：<input type="password" name="oldpassword"/><br/>
+    密码：<input type="password" name="password"/><br/>
+    确认密码：<input type="password" name="repassword"/><br/>
+    <input type="submit" value="更新"/><br/>
+</form>
+</body>
+</html>
